@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Naim | a Web Developer and Designer</title>
   </head>
   <body>
@@ -62,8 +63,9 @@
               Based in <span class="accent">Bangladesh</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-              nibh lectus netus in.
+              I transform ideas into dynamic web experiences with a focus on
+              stunning design and seamless functionality. <br />
+              Let's create something amazing together!
             </p>
             <div class="skills">
               <ul>
@@ -119,9 +121,7 @@
             <li>
               <img src="./images/star-black.png" alt="" /> Web Development
             </li>
-            <li>
-              <img src="./images/star-black.png" alt="" /> Web Development
-            </li>
+            <li><img src="./images/star-black.png" alt="" /> Web Design</li>
           </ul>
         </div>
       </section>
@@ -129,7 +129,7 @@
     <main class="">
       <!--About me section start  -->
 
-      <section class="about-me">
+      <section class="about-me" data-aos="fade-up">
         <div class="header container">
           <div class="headline">
             <h1 class="section-title">About Me</h1>
@@ -200,7 +200,7 @@
 
       <!-- Awards section start -->
 
-      <section class="awards container">
+      <section class="awards container" data-aos="fade-up">
         <div class="heading">
           <h1 class="section-title">Awards</h1>
           <p class="section-subtitle">
@@ -240,7 +240,7 @@
 
       <!-- Portfolio section start -->
 
-      <section class="portfolio container">
+      <section class="portfolio container" data-aos="fade-up">
         <div class="headline">
           <h1 class="section-title">My Portfolio</h1>
           <p class="section-subtitle">
@@ -309,7 +309,7 @@
 
       <!-- Contact section start -->
 
-      <section class="contact container">
+      <section class="contact container" data-aos="fade-up">
         <div>
           <p class="italicz">Contact</p>
           <h1 class="section-title">Reach out me</h1>
@@ -389,6 +389,7 @@
     </footer>
     <!-- Footer end -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       let menu = document.getElementById("mobile-menu");
       let nav = document.getElementById("mobile-nav");
@@ -407,6 +408,9 @@
           icon.classList.remove("fa-xmark");
           icon.classList.add("fa-bars");
         }
+      });
+      AOS.init({
+        once: true,
       });
     </script>
   </body>
